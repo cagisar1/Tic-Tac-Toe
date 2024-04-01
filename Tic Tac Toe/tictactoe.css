@@ -1,0 +1,193 @@
+html{
+	size: 100%;
+}
+body{
+	text-align: center;
+	color: black;
+	background-image: url("media/daylight.jpg");
+	background-size: cover;	
+	background-position: center;
+	background-repeat: no-repeat;
+}
+table{
+	margin: 30px auto;
+	height: 370px;
+	width: 370px;
+}
+td{
+	width:33%;
+	height:33%;
+	padding:0.66%;
+	background-color: rgba(250, 250, 250, 0);
+	font-size: 50px;
+	font-family: "Bangers";
+}
+#second td{
+	border-top: solid black 2px;
+	border-bottom: solid black 2px;
+}
+
+td:nth-of-type(2){
+	border-left: solid black 2px;
+	border-right: solid black 2px;
+}
+h1{
+	margin: 5px auto; 
+	width: 120px;
+	border: solid black 1px;
+	border-radius: 10px 100px / 120px;
+	background-color: rgba(82, 219, 13, 0.6);
+	transition: all 0.5s;
+}
+button{
+	height: 39px;
+	width: 125px;
+	text-transform: uppercase;
+	font-size: inherit;
+	border: solid black 1px;
+	border-radius: 10px 100px / 120px;
+	outline: none;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 1px;
+	transition: all 0.5s;
+	font-weight: 700;
+	cursor: pointer;
+}
+button:hover{
+	color: white;
+}
+.message{
+	font-size: 2.5rem;
+}
+#row{
+	text-transform: uppercase;
+	font-family:"Bangers";
+	font-weight: 700;
+	font-size: 1.7rem;
+	margin: 5px auto;
+	height: 30px;
+}
+#ask{
+	letter-spacing: 1.2px;
+}
+@keyframes nameday{
+	0%, 100%{
+			color: black;
+	}
+	50%{
+		color: rgba(0, 0, 0, 0);
+	}
+}
+@keyframes namenight{
+	0%, 100%{
+		color: rgba(212, 4, 50, 0.6);
+	}
+	50%{
+		color: rgba(0, 0, 0, 0);
+	}
+}
+.askday{
+	animation: nameday 1s 3;
+	color: black;
+}
+.asknight{
+	animation: namenight 1s 3;
+	color: rgba(212, 4, 50, 0.6);
+}
+.names{
+	height: 30px;
+	width: 150px;
+	background-color: rgba(0, 0, 0, 0);
+	outline: none;
+	border: none;
+	box-shadow: 0 8px 6px -6px black;
+	font-family: "Bangers";
+	font-size: inherit;
+	letter-spacing: 1.2px;
+	margin-left: 15px;
+	text-transform: uppercase;
+}
+.namesNight{
+	color: rgba(212, 4, 50, 0.6);
+}
+#rounds{
+	background-color: rgba(0, 0, 0, 0);
+	width: 35px;
+	height: 30px;
+	border: none;
+	font-size: 1.7rem;
+	font-family: "Bangers";
+	outline: none;
+	text-align: center;
+}
+#rounds::-webkit-outer-spin-button,
+#rounds::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#play{
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	font-family: "Bangers";
+}
+#shadow{
+	box-shadow: 0 8px 8px -6px black;
+}
+.hrday{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.hrnight{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(212, 4, 50, 0.5), rgba(0, 0, 0, 0));
+}
+.h1day{
+	color: black;
+	background-color: rgba(82, 219, 13, 0.6);
+}
+.h1night{
+	color: black;
+	background-color: rgba(212, 4, 50, 0.6);
+}
+.bday{
+	color: black;
+	background-color: rgba(82, 219, 13, 0.5);
+}
+.bnight{
+	color: black;
+	background-color: rgba(212, 4, 50, 0.5);
+}
+h1:hover{
+	width: 170px;
+}
+
+@keyframes blinkday{
+		0%, 100%{
+			color: black;
+		}
+		50%{
+			color: rgba(0, 0, 0, 0);
+		}
+		
+	}
+@keyframes blinknight{
+		0%, 100%{
+			color: rgb(212, 4, 50);
+		}
+		50%{
+			color: rgba(0, 0, 0, 0);
+		}
+		
+	}
+.msgday{
+	animation: blinkday 1s infinite;
+}
+
+.msgnight{
+	animation: blinknight 1s infinite;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" type="text/css" href="tictactoe.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h1><span id="one">0</span> to <span id="two">0</span></h1>
+<div id="row">
+	<div class="one"> 
+		<label for="uno" id="ask" >What's the first player name?</label>
+		<input type="text" id="uno" class="firstname names" minlength="3" maxlength="15" size="15">
+	</div>
+	
+	<div class="message"></div>
+	
+	<div class="two">
+		<label for="duo" id="ask"> What's the second player name?</label>
+		<input type="text" id="duo" class="secondname names" minlength="3" maxlength="15" size="15">
+	</div>
+</div>
+
+
+<hr>
+<div><span id="shadow"><span id="play">Playing to</span><input type="number" value="3" id="rounds"></span></div>
+<table>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr id="second">
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<div>
+	<button class="mode">Light on!</button>
+	<button id="new">New game</button>
+	<button id="restart">Start over</button>
+	<button class="mode">Light off!</button>
+</div>
+<script type="text/javascript" src="tictactoe.js"></script>
+</body>
+</html>
